@@ -38,11 +38,11 @@ public class Banco {
 
         while (true) {
             System.out.println("Escolha uma opção:");
-            System.out.println("1. Criar conta");
-            System.out.println("2. Depositar");
-            System.out.println("3. Sacar");
-            System.out.println("4. Ver saldo");
-            System.out.println("5. Sair");
+            System.out.println("1- Criar conta");
+            System.out.println("2- Depositar");
+            System.out.println("3- Sacar");
+            System.out.println("4- Ver saldo");
+            System.out.println("5- Sair");
             int opcao = scanner.nextInt();
 
             switch (opcao) {
@@ -72,7 +72,7 @@ public class Banco {
                     double valorSaque = scanner.nextDouble();
                     ContaBancaria contaSaque = banco.getConta(numeroConta);
                     if (contaSaque != null) {
-                        contaSaque.sacar(valorSaque);
+                        contaSaque.saque(valorSaque);
                     } else {
                         System.out.println("Conta não encontrada.");
                     }
