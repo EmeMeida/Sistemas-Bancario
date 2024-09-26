@@ -60,7 +60,7 @@ public class Banco {
                     double valorDeposito = scanner.nextDouble();
                     ContaBancaria contaDeposito = banco.getConta(numeroConta);
                     if (contaDeposito != null) {
-                        contaDeposito.depositar(valorDeposito);
+                        contaDeposito.dp(valorDeposito);
                     } else {
                         System.out.println("Conta não encontrada.");
                     }
